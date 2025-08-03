@@ -52,11 +52,21 @@ var colors = ["Red", "Green", "Blue"];
    var delCount = +prompt("How many colors do you want to delete?");
     colors.splice(delIndex, delCount);
     console.log("After deleting from index", delIndex + ":", colors);
-    // g. Ask the user at which index he/she wants to delete color(s)
-// & how many colors he/she wants to delete. Then remove them.
-
 var delIndex = +prompt("g. At which index do you want to start deleting?");
 var delCount = +prompt("How many colors do you want to delete?");
 colors.splice(delIndex, delCount);
 console.log("After deleting from index", delIndex + ", count", delCount + ":", colors);
-//qno10
+//qno11
+var userinp = prompt("Enter a city name:");
+var cites = ["karachi","Lahore","Islamabad","Quetta","Peshawar"];
+var flag =  false;
+for(var i = 0; i<cites.length; i++ ){
+    if(cites[i] === userinp){
+        flag = true;
+        break;
+        console.log("Welcome to the city of lights");
+    }
+}
+if(flag === false){
+    console.log("City not found");
+}
